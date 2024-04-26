@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -15,26 +16,49 @@ body, html {
 }
 
 .content {
-    text-align: center;
-    color: white;
+    font-family: "Roboto Slab", sans-serif;
 }
 
-h1, p {
-    font-family: 'Arial', sans-serif;
-}
-
-input {
+#password-input {
     padding: 10px;
-    margin-top: 10px;
     border: none;
     border-radius: 5px;
     border: 1px solid #333;
     background-color: rgba(200, 200, 200, 0.7);
-    width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    font-size: 25px
+    font-family: "Roboto Slab", sans-serif;
+    width: 170px;
+    font-size: 16px;
 }
 
-input:focus {
+#password-input:focus {
     outline: none;
+}
+
+.correct-password-block {
+    color: white;
+    font-weight: bolder;
+    font-size: 90px;
+    letter-spacing: 6px;
+    text-shadow: 1px 1px #000;
+
+}
+
+@media (min-width: 480px) {
+    #password-input {
+        width: 220px;
+    }
+}
+
+@media (min-width: 768px) {
+    #password-input {
+        width: 270px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    #password-input {
+        width: 320px;
+        font-size: 25px;
+    }
 }

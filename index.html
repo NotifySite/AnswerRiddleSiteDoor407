@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Одностраничный сайт</title>
+<title>Answer riddle</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="background">
-    <div class="content">
-        <h1>Добро пожаловать!</h1>
-        <p>Введите ваше имя:</p>
-        <input type="text" placeholder="Введите ваше имя">
+    <div class="background">
+        <div class="content">
+            <input style="font-family: 'Arial', sans-serif;" type="text" maxlength="10" id="password-input" placeholder="Enter the password">
+        </div>
     </div>
-</div>
-</body>
+    <script src="sha256.js"></script>
+    <script src="password_check.js"></script>
+    </body>
 </html>

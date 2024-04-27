@@ -6,7 +6,7 @@ html {
 }
 
 .background {
-    background-image: url('resources/background.png');
+    background-image: url('resources/background_compress.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;

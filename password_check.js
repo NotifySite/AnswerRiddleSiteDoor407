@@ -13,7 +13,7 @@ function checkPassword() {
     }
 }
 
-document.getElementById('password-input').addEventListener('keypress', function (event) {
+document.getElementById('password-input').addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         checkPassword();
     }

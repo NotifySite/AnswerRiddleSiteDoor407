@@ -4,7 +4,7 @@ const input = document.getElementById('password-input');
 
 function checkPassword() {
     const inputHash = sha256(input.value);
-    const correctPasswordHash = 'fEO2XSqoGKAIPSUIbcr/MCYwmdJye3yZJ5Xh1+5MfYM=';
+    const correctPasswordHash = 'ddfe0e8d462af661f81db36589c39882dc0f2330785b5d80cd34f2f520ad618f';
     if (inputHash === correctPasswordHash) {
         const result = CryptoJS.AES.decrypt('U2FsdGVkX19hT7jsiRO7jSx9aPe3PtCsTl+qwH6p9aM=', input.value).toString(CryptoJS.enc.Utf8);
         form.style.display = 'none';

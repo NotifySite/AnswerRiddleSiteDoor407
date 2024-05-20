@@ -4,9 +4,9 @@ const input = document.getElementById('password-input');
 
 function checkPassword() {
     const inputHash = sha256(input.value);
-    const correctPasswordHash = '6468e22921802c6d2264cb4c452ef810f2915330f7ef71d5a3d4b5c5bddd4f52';
+    const correctPasswordHash = 'ZsNCkyqnwY978fohKqARBp/C5Q4Mfp5Mc/yqaFGFTEc=';
     if (inputHash === correctPasswordHash) {
-        const result = CryptoJS.AES.decrypt('U2FsdGVkX1/DWgFkxJyFvBxV5JlOBuTcKN5ZQiL7fOY=', input.value).toString(CryptoJS.enc.Utf8);
+        const result = CryptoJS.AES.decrypt('U2FsdGVkX19hT7jsiRO7jSx9aPe3PtCsTl+qwH6p9aM=', input.value).toString(CryptoJS.enc.Utf8);
         form.style.display = 'none';
         contentBox.innerHTML = `<div class="correct-password-block">${result}</div>`;
     } else {
